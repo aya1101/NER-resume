@@ -1,12 +1,18 @@
 # NER-resume
-NER-model with resume entities  
+This project aims to build and train a NER model specifically designed for resume parsing, where the goal is to extract structured information from resumes to aid in automated recruitment and HR applications. 
 
-# Resume-entities-for-ner dataset
-This dataset is a document annotation dataset to be used to perform NER on resumes from indeed.com  
-Visualization of the Dataset and browse entities: https://dataturks.com/projects/abhishek.narayanan/Entity%20Recognition%20in%20Resumes  
-The structure of dataset includes:   
+**--- Approach ---**  
+To achieve high accuracy in entity recognition, using a Bidirectional Long Short-Term Memory (BiLSTM) network combined with a Conditional Random Field (CRF) layer.  
+
+**--- Dataset ---**   
+The model is trained on the Resume NER dataset from Kaggle, which contains labeled resumes with annotated entities such as:  
+- Names (candidate names)  
+- Skills (technical and soft skills mentioned)  
+- Education (universities, degrees, and certifications)  
+- Experience-related entities (company names, job titles, dates)  
+The structure of dataset includes:     
 - Content  
-- Annotation:  
+- Annotation:   
   + Entity  
   + Start point  
   + End point  
